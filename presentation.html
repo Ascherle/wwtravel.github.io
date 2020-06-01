@@ -1,0 +1,47 @@
+
+<head>
+  <style>
+    body{
+      display: flex;
+    }
+    div{
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3em;
+      width: 1200px;
+      height: 900px;
+      margin-top: 3em;
+      border: 1px solid green;
+    }
+    img{
+      position: absolute;
+
+    }
+    .img1{
+      height: 300px;
+      width: 900px;
+      right: 0px;
+    }
+    .img2{
+      height: 900px;
+      width: 1200px;
+      /* opacity: 0.5; */
+      /* display: none; */
+    }
+
+  </style>
+
+  <script language="javascript" type="text/javascript">
+    myFunction(){
+      document.getElementbyId("hello").style.display="none";
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <img class="img1" onclick="myFunction()" src="ImageFolder/Pres/ColorsSimple.png" alt="colors">
+    <img class="img2" id="hello" src="ImageFolder/Pres/ColorsAdvanced.png" alt="colors">
+  </div>
+</body>

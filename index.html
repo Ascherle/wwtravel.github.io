@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="ImageFolder/Global/WWT.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> <!-- Poppins for Header -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> <!-- Lato for Paragraph Text -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> <!-- Normalised Stylesheet -->
+  <script language="javascript" type="text/javascript" src="SearchbarScript.js"></script>
+  <link rel="stylesheet" href="GlobalStylesheet.css">
+  <link rel="stylesheet" href="HomeStylesheet.css">
+  <title> WWT - Home </title>
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- Header -->
+    <img class="grid12" src="ImageFolder/Global/worldmapbluegreen.png" alt="Banner cannot be loaded">
+
+    <!-- Searchbar -->
+    <div id="searchbar" class="grid2">
+      <input id="searchinput" type="text" placeholder="Search">
+      <button onclick="startSearch()">🔍</button>
+    </div>
+
+    <section id="markers" class="grid12">
+      <!-- for every new visited place a new div must be added to create a new marker on the map  -->
+      <a id="markerrussia" class="hovermarker" href="#russia">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Russia</p>
+      </a>
+
+      <a id="markerfrance" class="hovermarker" href="#france">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>France</p>
+      </a>
+
+      <a id="markernorway" class="hovermarker" href="#norway">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Norway</p>
+      </a>
+
+      <a id="markeregypt" class="hovermarker" href="#egypt">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Egypt</p>
+      </a>
+
+      <a id="markerengland" class="hovermarker" href="#england">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>England</p>
+      </a>
+
+      <a id="markericeland" class="hovermarker" href="#iceland">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Iceland</p>
+      </a>
+
+      <a id="markerbrazil" class="hovermarker" href="#brazil">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Brazil</p>
+      </a>
+
+      <a id="markerusa" class="hovermarker" href="#usa">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>USA</p>
+      </a>
+
+      <a id="markeraustralia" class="hovermarker" href="#australia">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Australia</p>
+      </a>
+
+      <a id="markerindia" class="hovermarker" href="#india">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>India</p>
+      </a>
+
+      <a id="markersouthafrica" class="hovermarker" href="#southafrica">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>South Africa</p>
+      </a>
+
+      <a id="markerchina" class="hovermarker" href="#china">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>China</p>
+      </a>
+
+      <a id="markercanada" class="hovermarker" href="#canada">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Canada</p>
+      </a>
+
+      <a id="markergreenland" class="hovermarker" href="#greenland">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Greenland</p>
+      </a>
+
+      <a id="markerspain" class="hovermarker" href="#spain">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Spain</p>
+      </a>
+
+      <a id="markeritaly" class="hovermarker" href="#italy">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Italy</p>
+      </a>
+
+      <a id="markerchile" class="hovermarker" href="#chile">
+        <img class="sticker" src="ImageFolder/Home/CountryMarker.png" alt="recked">
+        <p>Chile</p>
+      </a>
+
+    </section>
+
+    <!-- Navigation bar -->
+    <nav id="bar" class="grid12">
+      <div></div>
+      <!-- basically a background for the nav bar, so that the nav bar also covers elements that reach over the defined content space (like shadows of elements). Additional div is needed so that the bar itself, which has a visible border, does not need to be longer than grid12 -->
+      <a id="home" href="Home.html#bar">Home</a>
+      <a id="article" href="RussiaArticle.html#bar">Article</a>
+      <a id="news" href="News.html#bar">News</a>
+      <a id="gallery" href="Gallery.html#bar">Gallery</a>
+      <a id="aboutus" href="AboutUs.html#bar">About Us</a>
+    </nav>
+
+
+    <div id="spacer" class="grid12">
+    </div>
+
+
+    <!-- __________________________________________________________ -->
+
+
+
+    <a id="russia" class="grid4 clickbox" href="RussiaArticle.html">
+      <img src="ImageFolder/Home/RussianChurch.jpg" alt="Russia">
+      <article>
+        <h2>Russia</h2>
+        <p>Russia, a country that stretches over a vast expanse of eastern Europe and northern Asia. Once the preeminent republic of the Union of Soviet Socialist Republics (U.S.S.R.; commonly known as the Soviet Union), Russia became an independent
+          country after the dis&shy;solution of the Soviet Union ... </p>
+      </article>
+    </a>
+
+
+    <a id="france" class="grid4 clickbox" href="FranceArticle.html">
+      <img src="ImageFolder/Home/France.jpg" alt="France">
+      <article>
+        <h2>France</h2>
+        <p>France has long been a global centre of art, science, and philosophy. It hosts the world's fourth-largest number of UNESCO World Heritage Sites and is the leading tourist destination, re&shy;cei&shy;ving around 83 million foreign visitors
+          annually. France is a developed country with the world's seventh-largest ... </p>
+      </article>
+    </a>
+
+
+    <a id="norway" class="grid4 clickbox" href="Home.html">
+      <img src="ImageFolder/Home/NorwayCliff.jpeg" alt="Norway">
+      <article>
+        <h2>Norway</h2>
+        <p>Norway, officially the Kingdom of Norway, is a Nordic country in North&shy;western Europe whose territory com&shy;prises the western and northern&shy;most portion of the Scandinavian Peninsula; the remote island of Jan Mayen and the
+          archipelago of Svalbard are also part of the Kingdom of Norway. ....<p>
+      </article>
+    </a>
+
+
+    <a id="egypt" class="grid4 clickbox" href="Home.html">
+      <img src="ImageFolder/Home/Egypt.jpg" alt="Egypt">
+      <article>
+        <h2>Egypt</h2>
+        <p>Egypt, officially the Arab Republic of Egypt, is a country spanning the north&shy;east corner of Africa and southwest corner of Asia by a land bridge formed by the Sinai Peninsula. Egypt is a Mediterranean country bordered by the Gaza
+          Strip and Israel to the northeast, the Gulf of Aqaba ...<p>
+      </article>
+    </a>
+
+    <a id="england" class="grid4 clickbox" href="Home.html">
+      <img src="ImageFolder/Home/England.jpg" alt="England">
+      <article>
+        <h2>England</h2>
+        <p>England is a country that is part of the United Kingdom. It shares land borders with Scotland to the north and Wales to the west. The Irish Sea lies northwest of England and the Celtic Sea lies to the southwest. England is separated from
+          continental Europe by the North Sea to the east and the English Channel ...<p>
+      </article>
+    </a>
+
+    <a id="iceland" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/IcelandPolarLights.jpg" alt="Iceland">
+      <article>
+        <h2>Iceland</h2>
+        <p>Iceland is a Nordic island country in the North Atlantic, with a population of 348,580 and an area of 103,000 km2, making it the most sparsely populated country in Europe. The capital and largest city is Reykjavík, with Reykjavík and the
+          surrounding areas in the south&shy;west of the country being home ...<p>
+      </article>
+    </a>
+
+    <a id="brazil" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/Brazil.jpg" alt="brazil">
+      <article>
+        <h2>Brazil</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>
+      </article>
+    </a>
+
+    <a id="usa" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/NewYork.jpg" alt="new york">
+      <article>
+        <h2>USA</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>
+      </article>
+    </a>
+
+    <a id="australia" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/AustralianCowboys.jpg" alt="australia">
+      <article>
+        <h2>Australia</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>      </article>
+    </a>
+
+    <a id="india" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/India.jpg" alt="india">
+      <article>
+        <h2>India</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>      </article>
+    </a>
+
+    <a id="southafrica" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/SouthAfrica.jpg" alt="South Africa">
+      <article>
+        <h2>South Africa</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>      </article>
+    </a>
+
+    <a id="china" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/china.jpg" alt="China">
+      <article>
+        <h2>China</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>      </article>
+    </a>
+
+    <a id="canada" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/Canada.jpg" alt="Canada">
+      <article>
+        <h2>Canada</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>      </article>
+    </a>
+
+    <a id="greenland" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/Greenland.jpg" alt="Greenland">
+      <article>
+        <h2>Greenland</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>      </article>
+    </a>
+
+    <a id="spain" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/Barcelona.jpg" alt="Spain">
+      <article>
+        <h2>Spain</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>      </article>
+    </a>
+
+    <a id="italy" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/Italy.jpg" alt="Italy">
+      <article>
+        <h2>Italy</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>      </article>
+    </a>
+
+    <a id="chile" class="grid4 clickbox" href="">
+      <img src="ImageFolder/Home/Chile.jpg" alt="Chile">
+      <article>
+        <h2>Chile</h2>
+        <p>Lorem ipsum dolor sit amet, con&shy;sec&shy;tetur adipisicing elit, sed do eius&shy;mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la&shy;boris nisi ut aliquip ex ea commodo con&shy;sequat. Duis aute irure dolor in rep&shy;re&shy;henderit in voluptate velit esse ...<p>      </article>
+    </a>
+
+
+
+
+
+
+    <!-- __________________________________________________________ -->
+
+
+    <div id="spacer2" class="grid12">
+    </div>
+
+    <footer id="footer" class="grid12">
+
+      <div id="socialmedia">
+        <img src="ImageFolder/Footer/facebook.png" alt="facebook">
+        <img src="ImageFolder/Footer/googleplus.png" alt="googleplus">
+        <img src="ImageFolder/Footer/pinterest.png" alt="pinterest">
+        <img src="ImageFolder/Footer/twitter.png" alt="twitter">
+      </div>
+
+      <div>
+        <a>Legal Notice</a>
+        <a>Privacy Statement</a>
+        <a>Contact</a>
+      </div>
+
+      <div>
+        <p>@copyright 2016-2018 <br>
+          All Rights reserved</p>
+      </div>
+
+      <a href="#" id="top">Top ⮝</a>
+
+    </footer>
+
+    <div id="spacer3">
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

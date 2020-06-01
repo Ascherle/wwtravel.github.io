@@ -1,0 +1,217 @@
+
+input[type=checkbox]{
+    display: none;
+}
+
+
+
+.imagecontainerleft{
+  float: left;
+  position: relative;   /* necessary to set image caption relative to this container */
+  /* border: 3px solid red; */
+}
+
+
+
+
+
+
+#article{
+  color: #cc4509 !important;
+  background-color: inherit;
+}
+#article:hover{
+  transform: none !important;
+  color: #cc4509 !important;
+  background-color: inherit;
+}
+
+#navigation{
+  text-align: center;
+  height: auto;
+  background-image: url("ImageFolder/Article/PaperSmall.png");
+  background-size: 100%;
+  margin-top: 35px;
+  position: relative;  /* position relative needed for z-index */
+  z-index: 1;  /* z-index of navigation above content box, so if image of content box collides with navigation bar, the bar is on top */
+}
+
+
+#navigation img{
+  width: inherit;
+  position: relative;
+}
+/* the end pieces of the paper roll are slightly displaced to ensure the end of the paber roll pattern is covered */
+#toproll {
+  bottom: 10px;
+}
+#bottomroll {
+  top: 20px;
+}
+
+label{
+  line-height: 1.5rem;
+}
+label:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #164e09;
+  background-color: inherit;
+}
+
+#navigation a{
+  display: none;
+  text-decoration: none;
+}
+
+#navigation input[type=checkbox]:checked ~ a {
+    display: block;
+    line-height: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#contentbox{
+  z-index: 0;
+  position: relative;
+  background-color: inherit;
+  color: inherit;
+}
+
+
+
+#header{
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+#previous, #next{
+  position: absolute;
+  top: -30px;
+  color: grey;
+  background-color: inherit;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+#previous{
+  right: 0px;
+}
+#previous:hover, #next:hover{
+  cursor:pointer;
+  color: black;
+  background-color: inherit;
+}
+
+.subheader{
+  border-top: 0.5px solid black;
+  height: 1px;
+  width: auto;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  position: relative;
+  background-color: inherit;
+  color: inherit;
+}
+.subheader h2{
+  text-align: center;
+  background-color: inherit;
+  color: inherit;
+  width: max-content;
+  padding: 6px;
+  /* line-height: 0; */
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)  /* since the h2 is moved 50% to right and 50% down, it must now be moved up and left by half its own height in order to be centered */
+}
+
+
+article{
+  text-align: justify;
+  width: 460px;
+  margin-bottom: 70px;
+}
+
+h1{
+  text-align: center;
+}
+
+
+
+
+
+.imagecontainerleft img{
+  width: 380px;
+  float: right;
+}
+.imagecontainerleft div{
+  /* border: 1px solid green; */
+  position: absolute;
+  width: 380px;
+  right: 0px;
+  bottom: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(0,0,0,0));
+  opacity: 0;
+}
+.imagecontainerleft:hover div{
+  opacity: 1;
+}
+
+.imagecontainerright{
+  float: right;
+  position: relative;
+}
+.imagecontainerright img{
+  width: 380px;
+  float: left;
+}
+.imagecontainerright div{
+  /* border: 1px solid green; */
+  position: absolute;
+  width: 380px;
+  left: 0px;
+  bottom: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(0,0,0,0));
+  opacity: 0;
+}
+.imagecontainerright:hover div{
+  opacity: 1;
+}
+.imagecontainercenter{
+  position: relative;
+}
+.imagecontainercenter img{
+  width: 460px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imagecontainercenter div{
+  position: absolute;
+  width: 460px;
+  left: 0px;
+  bottom: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(0,0,0,0));
+  opacity: 0;
+}
+.imagecontainercenter:hover div{
+  opacity: 1;
+}

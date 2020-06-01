@@ -1,0 +1,132 @@
+
+#news{
+  color: #cc4509 !important;
+  background-color: inherit;
+}
+#news:hover{
+  transform: none !important;
+  color: #cc4509 !important;
+  background-color: inherit;
+}
+
+main{
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  display: flex;
+}
+
+#left, #right{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+#plans{
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  background-image: url("ImageFolder/News/Note.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 450px
+}
+#plans ul{
+	padding-left: 70px;
+	text-align: left;
+  list-style-position: inside;
+	list-style-type: circle;
+}
+#storyofmonth{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  /* flex-grow: 1; */
+  text-align: justify;
+  /* border: 1px solid yellow; */
+}
+
+.subheader{
+  border-bottom: 0.5px solid black;
+  height: 1px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  position: relative;
+  background-color: inherit;
+  color: black;
+}
+
+.subheader h2{
+  z-index: 10;
+  text-align: center;
+  background-color: white;
+  color: inherit;
+  width: max-content;
+  padding: 6px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)  /* since the h2 is moved 50% to right and 50% down, it must now be moved up and left by half its own height in order to be centered */
+}
+#latestentry{
+  /* flex-grow: 1; */
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: justify;
+  /* box-shadow: -4px 3px 3px rgba(0, 0, 0, 0.1); */
+}
+#notes{
+  margin-top: 80px;
+  position: relative;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  height: 300px;
+  /* border: 1px solid green; */
+  z-index: 1;
+}
+#notes img{
+  z-index: -1;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 40px;
+  /* right: 0px; */
+  top: 20px;
+}
+#storyofmonth img, #latestentry img{
+  max-width: 100%;
+}
+
+.imagecontainercenter{
+  position: relative;
+}
+.imagecontainercenter img{
+  width: 460px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 0;
+  padding: 0px;
+  margin-bottom: 0px;
+  box-shadow: none;
+}
+.imagecontainercenter div{
+  position: absolute;
+  width: 460px;
+  left: 0px;
+  bottom: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(0,0,0,0));
+  opacity: 0;
+}
+.imagecontainercenter:hover div{
+  opacity: 1;
+}

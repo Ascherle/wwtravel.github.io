@@ -1,0 +1,94 @@
+
+#gallery{
+  color: #cc4509 !important;
+  background-color: inherit;
+}
+#gallery:hover{
+  transform: none !important;
+  color: #cc4509 !important;
+  background-color: inherit;
+}
+
+#navigation{
+  background-image: url("ImageFolder/Gallery/PaperBig.png");
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+#navigation img{
+  width: inherit;
+}
+#toproll{
+  position: relative;
+  top: -10px;
+}
+#bottomroll{
+  position: relative;
+  bottom: -30px;
+}
+#navigation div{
+  width: auto;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.6em;
+}
+#navigation a{
+  color: black;
+  background-color: inherit;
+  padding: 10px;
+  text-decoration: none;
+  line-height: 2.0rem;
+}
+#navigation a:hover{
+  /*color: #71175a;*/
+  color: #164e09;
+  background-color: inherit;
+}
+
+.picture {
+  height: 300px;
+  box-shadow: -4px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.picture:hover {
+  transform:rotateZ(-1deg) translate(4px, 2px) scale(1.05);
+  box-shadow: -6px 4px 3px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+video {
+  box-shadow: -4px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.subheader{
+  border-bottom: 0.5px solid black;
+  height: 1px;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  position: relative;
+  background-color: inherit;
+  color: black;
+}
+
+.subheader h2{
+  text-align: center;
+  background-color: inherit;
+  color: inherit;
+  width: max-content;
+  padding: 6px;
+  /* line-height: 0; */
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)  /* since the h2 is moved 50% to right and 50% down, it must now be moved up and left by half its own height in order to be centered */
+}
+
+
+h1{
+  text-align: center;
+}

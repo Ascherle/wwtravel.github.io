@@ -1,0 +1,161 @@
+
+#home{
+  color: #cc4509 !important;
+  background-color: inherit;
+}
+#home:hover{
+  transform: none !important;
+  color: #cc4509 !important;
+  background-color: inherit;
+}
+
+#markers{
+  /* border: 1px solid green; */
+  position: absolute;
+  height: 500px;
+}
+.hovermarker{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  /* border: 1px solid green; */
+  height: 80px;  /* height may never be changed since that would relocate all existing markers on the map */
+  text-decoration: none;
+  color: black;
+  background-color: rgba(0,0,0,0);
+}
+.hovermarker p{
+  line-height: 0;
+  margin-left: 3px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: none;
+  z-index: 100;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.sticker{
+  opacity: 0.6;
+  width: 10px;
+  height: 10px;
+  margin: auto;
+}
+.sticker:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+.sticker:hover+p{
+  display: initial;
+}
+/* the following determines the absolute position of each marker */
+#markerrussia{
+  left: 680px;
+  top: 140px;
+}
+#markerfrance{
+  left: 440px;
+  top: 195px;
+}
+#markernorway{
+  left: 460px;
+  top: 145px;
+}
+#markeregypt{
+  left: 500px;
+  top: 255px;
+}
+#markerengland{
+	left: 435px;
+	top: 175px;
+}
+#markericeland{
+	left:390px;
+	top:130px;
+}
+#markerbrazil{
+	left:310px;
+	top:360px;
+}
+#markerusa{
+	left:180px;
+	top:200px;
+}
+#markeraustralia{
+	left:790px;
+	top:395px;
+}
+#markerindia{
+	left:640px;
+	top:285px;
+}
+#markersouthafrica{
+	left:500px;
+	top:410px;
+}
+#markerchina{
+  left:690px;
+	top:250px;
+}
+#markercanada{
+  left:160px;
+	top:150px;
+}
+#markergreenland{
+  left:330px;
+	top:80px;
+}
+#markerspain{
+  left: 430px;
+  top: 215px;
+}
+#markeritaly{
+  left: 475px;
+  top: 213px;
+}
+#markerchile{
+  left:255px;
+	top:410px;
+}
+
+.clickbox {
+  height: 220px;
+  background-color: white;  /* when background-image gets opacity 0.5, background should be white */
+  color: inherit;
+  text-decoration: none;
+}
+.clickbox:hover>img {
+  opacity: 0.2;
+}
+.clickbox img{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  } /* image in section serves as background image */
+
+
+article {
+  box-sizing: border-box;
+  border: 0.5px solid black;
+  height: inherit;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: justify;
+}
+article h2{
+  width: max-content;
+  position: relative;
+  left: -9px;
+  padding-left: 9px;
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.6);
+
+}
+article>p {
+  opacity: 0;
+}
+article:hover>p {
+  opacity: 1;
+}
